@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" class="txt">
+	<button class="btn">猜数字</button>
+
+	<script>
+		var txt = document.querySelector('.txt');
+		var btn = document.querySelector('.btn');
+		var target = Math.floor(Math.random()*100 + 1);
+
+		btn.onclick = function(){
+			var inp = Number(txt.value);
+			if(inp > target){
+				alert('大于结果');
+			}else if(inp < target){
+				alert('小于结果');
+			}else if(inp === target){
+				alert('回答正确');
+			}
+		}
+
+
+	</script>
+</body>
+</html>

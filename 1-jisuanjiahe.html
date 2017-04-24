@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" class="txt">
+	<button class="btn">计算</button>
+	<script>
+		
+		var txt = document.querySelector('.txt');
+		var btn = document.querySelector('.btn');
+
+		btn.onclick = function(){
+			var num = Number(txt.value);
+			var sum = 0;
+			for(var i = 1;i<=num;i++){
+				sum += i;
+			}	
+			alert(sum);
+		}
+
+	</script>
+</body>
+</html>
